@@ -1,0 +1,52 @@
+Cmp-Mod V01 Created by CvPcb (2013-mar-13)-testing date = Sun 05 May 2013 01:06:26 BST
+
+BeginCmp
+TimeStamp = /5185A75D;
+Reference = C1;
+ValeurCmp = 100n;
+IdModule  = SM0805;
+EndCmp
+
+BeginCmp
+TimeStamp = /5185A76C;
+Reference = C2;
+ValeurCmp = 10u;
+IdModule  = SM1206;
+EndCmp
+
+BeginCmp
+TimeStamp = /51859DF6;
+Reference = P1;
+ValeurCmp = Left_Header;
+IdModule  = pin_array_11x2;
+EndCmp
+
+BeginCmp
+TimeStamp = /51859FD8;
+Reference = P2;
+ValeurCmp = IDD;
+IdModule  = PIN_ARRAY_2X1;
+EndCmp
+
+BeginCmp
+TimeStamp = /51859E05;
+Reference = P3;
+ValeurCmp = Right_Header;
+IdModule  = pin_array_11x2;
+EndCmp
+
+BeginCmp
+TimeStamp = /5185A41B;
+Reference = R1;
+ValeurCmp = R;
+IdModule  = R3-LARGE_PADS;
+EndCmp
+
+BeginCmp
+TimeStamp = /51859EA5;
+Reference = U1;
+ValeurCmp = MAX4378;
+IdModule  = SO14N;
+EndCmp
+
+EndListe
