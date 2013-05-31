@@ -1,4 +1,4 @@
-EESchema Schematic File Version 2  date Sun 05 May 2013 01:02:01 BST
+EESchema Schematic File Version 2  date Wed 22 May 2013 19:59:11 BST
 LIBS:power
 LIBS:device
 LIBS:transistors
@@ -30,13 +30,14 @@ LIBS:atmel
 LIBS:contrib
 LIBS:valves
 LIBS:st-powersense-shield
+LIBS:st-powersense-shield-cache
 EELAYER 24 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 1
 Title ""
-Date "5 may 2013"
+Date "22 may 2013"
 Rev ""
 Comp ""
 Comment1 ""
@@ -164,7 +165,7 @@ Wire Wire Line
 Wire Wire Line
 	1600 1400 1300 1400
 Wire Wire Line
-	1600 1500 1300 1500
+	950  1500 1600 1500
 Wire Wire Line
 	1600 1600 1300 1600
 Wire Wire Line
@@ -288,19 +289,13 @@ Wire Wire Line
 Wire Wire Line
 	5100 2850 5100 2700
 Wire Wire Line
-	4300 4300 3800 4300
-Wire Wire Line
-	4300 4400 3800 4400
-Wire Wire Line
 	4300 4200 3800 4200
 Text Label 3900 4200 0    60   ~ 0
-ADC1
-Text Label 3900 4300 0    60   ~ 0
+ADC2
+Text Label 3900 4700 0    60   ~ 0
 IDD-
-Text Label 3900 4400 0    60   ~ 0
+Text Label 3900 4600 0    60   ~ 0
 IDD+
-Wire Wire Line
-	3500 4500 4300 4500
 $Comp
 L GND #PWR08
 U 1 1 5185A6C0
@@ -360,12 +355,12 @@ $EndComp
 $Comp
 L VAA #PWR010
 U 1 1 5185A830
-P 3500 4500
-F 0 "#PWR010" H 3500 4560 30  0001 C CNN
-F 1 "VAA" H 3500 4610 30  0000 C CNN
-F 2 "" H 3500 4500 60  0000 C CNN
-F 3 "" H 3500 4500 60  0000 C CNN
-	1    3500 4500
+P 3550 4600
+F 0 "#PWR010" H 3550 4660 30  0001 C CNN
+F 1 "VAA" H 3550 4710 30  0000 C CNN
+F 2 "" H 3550 4600 60  0000 C CNN
+F 3 "" H 3550 4600 60  0000 C CNN
+	1    3550 4600
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
@@ -398,4 +393,165 @@ Text Label 2800 1900 0    60   ~ 0
 ADC3
 Text Label 950  1900 0    60   ~ 0
 ADC2
+$Comp
+L CONN_3 P4
+U 1 1 519D0595
+P 3250 4300
+F 0 "P4" V 3200 4300 50  0000 C CNN
+F 1 "MEAS_2" V 3300 4300 40  0000 C CNN
+F 2 "~" H 3250 4300 60  0000 C CNN
+F 3 "~" H 3250 4300 60  0000 C CNN
+	1    3250 4300
+	-1   0    0    1   
+$EndComp
+$Comp
+L CONN_3 P7
+U 1 1 519D05B3
+P 6200 4700
+F 0 "P7" V 6150 4700 50  0000 C CNN
+F 1 "MEAS_3" V 6250 4700 40  0000 C CNN
+F 2 "~" H 6200 4700 60  0000 C CNN
+F 3 "~" H 6200 4700 60  0000 C CNN
+	1    6200 4700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5850 4600 5450 4600
+Wire Wire Line
+	5450 4700 5850 4700
+$Comp
+L GND #PWR013
+U 1 1 519D077E
+P 5850 4950
+F 0 "#PWR013" H 5850 4950 30  0001 C CNN
+F 1 "GND" H 5850 4880 30  0001 C CNN
+F 2 "" H 5850 4950 60  0000 C CNN
+F 3 "" H 5850 4950 60  0000 C CNN
+	1    5850 4950
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR014
+U 1 1 519D078D
+P 3700 4100
+F 0 "#PWR014" H 3700 4100 30  0001 C CNN
+F 1 "GND" H 3700 4030 30  0001 C CNN
+F 2 "" H 3700 4100 60  0000 C CNN
+F 3 "" H 3700 4100 60  0000 C CNN
+	1    3700 4100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5850 4800 5850 4950
+Wire Wire Line
+	4300 4800 4000 4800
+Wire Wire Line
+	5850 4100 5850 4200
+Wire Wire Line
+	5700 4100 5850 4100
+Wire Wire Line
+	5700 4200 5700 4100
+$Comp
+L GND #PWR015
+U 1 1 519D072B
+P 5700 4200
+F 0 "#PWR015" H 5700 4200 30  0001 C CNN
+F 1 "GND" H 5700 4130 30  0001 C CNN
+F 2 "" H 5700 4200 60  0000 C CNN
+F 3 "" H 5700 4200 60  0000 C CNN
+	1    5700 4200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5850 4400 5450 4400
+Wire Wire Line
+	5450 4300 5850 4300
+$Comp
+L CONN_3 P6
+U 1 1 519D05C2
+P 6200 4300
+F 0 "P6" V 6150 4300 50  0000 C CNN
+F 1 "MEAS_4" V 6250 4300 40  0000 C CNN
+F 2 "~" H 6200 4300 60  0000 C CNN
+F 3 "~" H 6200 4300 60  0000 C CNN
+	1    6200 4300
+	1    0    0    1   
+$EndComp
+$Comp
+L CONN_2 P5
+U 1 1 519D094D
+P 5550 3550
+F 0 "P5" V 5500 3550 40  0000 C CNN
+F 1 "AMP_4" V 5600 3550 40  0000 C CNN
+F 2 "~" H 5550 3550 60  0000 C CNN
+F 3 "~" H 5550 3550 60  0000 C CNN
+	1    5550 3550
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	5800 4100 5800 3900
+Wire Wire Line
+	5800 3900 5650 3900
+Connection ~ 5800 4100
+Wire Wire Line
+	5450 4200 5450 3900
+Wire Wire Line
+	5450 4800 5750 4800
+Text Label 4050 4800 0    60   ~ 0
+ADC1
+Text Label 5500 4800 0    60   ~ 0
+ADC3
+Text Label 1000 1500 0    60   ~ 0
+ADC1
+Text Notes 1350 2100 0    60   ~ 0
+Free pins:\n\nPA3: ADC123\nPC2: ADC123 (may also used for SPI2)\nPB0: ADC12\nPB1: ADC12
+NoConn ~ 1300 1200
+NoConn ~ 1300 1300
+NoConn ~ 1300 1400
+NoConn ~ 1300 1600
+NoConn ~ 1300 1700
+NoConn ~ 1300 1800
+NoConn ~ 2700 1200
+NoConn ~ 2700 1300
+NoConn ~ 2700 1400
+NoConn ~ 2700 1500
+NoConn ~ 2700 1600
+NoConn ~ 2700 1700
+NoConn ~ 2700 1800
+NoConn ~ 7300 1200
+NoConn ~ 7300 1300
+NoConn ~ 7300 1400
+NoConn ~ 7300 1500
+NoConn ~ 7300 1600
+NoConn ~ 7300 1700
+NoConn ~ 7300 1800
+NoConn ~ 7300 1900
+NoConn ~ 8100 1900
+NoConn ~ 8100 1800
+NoConn ~ 8100 1700
+NoConn ~ 8100 1600
+NoConn ~ 8100 1500
+NoConn ~ 8100 1400
+NoConn ~ 8100 1300
+NoConn ~ 8100 1200
+Wire Wire Line
+	4300 4600 3800 4600
+Wire Wire Line
+	4300 4700 3800 4700
+Wire Wire Line
+	4300 4400 3600 4400
+Wire Wire Line
+	3600 4300 4300 4300
+Wire Wire Line
+	3600 4200 3600 4000
+Wire Wire Line
+	3550 4600 3700 4600
+Wire Wire Line
+	3700 4600 3700 4500
+Wire Wire Line
+	3700 4500 4300 4500
+Wire Wire Line
+	3600 4000 3700 4000
+Wire Wire Line
+	3700 4000 3700 4100
 $EndSCHEMATC
