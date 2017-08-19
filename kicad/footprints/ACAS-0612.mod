@@ -1,0 +1,79 @@
+PCBNEW-LibModule-V1  31/10/2013 18:35:40
+# encoding utf-8
+Units mm
+$INDEX
+ACAS-0612
+$EndINDEX
+$MODULE ACAS-0612
+Po 0 0 0 15 5272A2DE 00000000 ~~
+Li ACAS-0612
+Cd ACAC ACAS resistor array 0612
+Kw ACAC ACAS array 0612
+Sc 0
+AR 
+Op 0 0 0
+At SMD
+T0 0 -2.6 1 1 0 0.15 N V 21 N "ACAS-0612"
+T1 -0.3 3.2 1 1 0 0.15 N I 21 N "VAL**"
+DS -1.7 1.7 -1.7 -1.7 0.2 21
+DS 1.7 -1.7 1.7 1.7 0.2 21
+DS -1.7 -1.7 1.7 -1.7 0.2 21
+DS 1.7 1.7 -1.7 1.7 0.2 21
+$PAD
+Sh "1" R 0.63 1.15 0 0 0
+Dr 0 0 0
+At SMD N 00888000
+Ne 0 ""
+Po -1.2 1
+$EndPAD
+$PAD
+Sh "2" R 0.44 1.15 0 0 0
+Dr 0 0 0
+At SMD N 00888000
+Ne 0 ""
+Po -0.4 1
+$EndPAD
+$PAD
+Sh "3" R 0.44 1.15 0 0 0
+Dr 0 0 0
+At SMD N 00888000
+Ne 0 ""
+Po 0.4 1
+$EndPAD
+$PAD
+Sh "4" R 0.63 1.15 0 0 0
+Dr 0 0 0
+At SMD N 00888000
+Ne 0 ""
+Po 1.2 1
+$EndPAD
+$PAD
+Sh "8" R 0.63 1.15 0 0 0
+Dr 0 0 0
+At SMD N 00888000
+Ne 0 ""
+Po -1.2 -0.96
+$EndPAD
+$PAD
+Sh "7" R 0.44 1.15 0 0 0
+Dr 0 0 0
+At SMD N 00888000
+Ne 0 ""
+Po -0.4 -0.96
+$EndPAD
+$PAD
+Sh "6" R 0.44 1.15 0 0 0
+Dr 0 0 0
+At SMD N 00888000
+Ne 0 ""
+Po 0.4 -0.96
+$EndPAD
+$PAD
+Sh "5" R 0.63 1.15 0 0 0
+Dr 0 0 0
+At SMD N 00888000
+Ne 0 ""
+Po 1.2 -0.96
+$EndPAD
+$EndMODULE ACAS-0612
+$EndLIBRARY
